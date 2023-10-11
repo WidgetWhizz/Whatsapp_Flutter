@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/calls/Calls.dart';
 import 'package:whatsapp_design/src/features/chats/Chats.dart';
-import 'package:whatsapp_design/src/features/Community.dart';
+import 'package:whatsapp_design/src/features/community/Community.dart';
 import 'package:whatsapp_design/src/features/status/Status.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -31,7 +31,7 @@ class _DashboardPageState extends State<DashboardPage> {
         body: SafeArea(
             child: TabBarView(
                 children:[
-                  Community(),
+                  CommunityPage(),
                   Chats(),
                   Status(),
                   Calls()
@@ -39,6 +39,7 @@ class _DashboardPageState extends State<DashboardPage> {
 
             )
         ),
+
     ),
       );
   }
