@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/calls/Calls.dart';
 import 'package:whatsapp_design/src/features/chats/Chats.dart';
 import 'package:whatsapp_design/src/features/Community.dart';
+import 'package:whatsapp_design/src/features/payments/whatsapp_payment.dart';
 import 'package:whatsapp_design/src/features/status/Status.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -28,7 +29,11 @@ class _DashboardPageState extends State<DashboardPage> with SingleTickerProvider
           title: Text("Whatsapp"),
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            PopupMenuButton<String>(
+            PopupMenuButton<String>(onSelected: (value){
+              if(value == "Payments"){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => WhatsAppPayment()));
+              }
+            },
                 itemBuilder: (BuildContext context) {
                   return [
                     PopupMenuItem(child: Text("New group"), value: "New group",),

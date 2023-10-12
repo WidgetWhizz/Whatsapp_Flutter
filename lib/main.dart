@@ -1,4 +1,4 @@
-import 'dart:collection';
+
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
@@ -13,7 +13,7 @@ class WhatsApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Map<int, Color> swatch = new Map();
+
 
     return MaterialApp(
       title: 'Whatsapp',
@@ -30,6 +30,7 @@ class WhatsApp extends StatelessWidget {
         primarySwatch: Colors.green
       ),
       home: DashboardPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
