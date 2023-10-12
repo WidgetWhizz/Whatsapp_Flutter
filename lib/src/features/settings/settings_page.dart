@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
+import 'package:whatsapp_design/src/features/settings/storage_and_data/storage__data_page.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({super.key});
@@ -56,7 +57,9 @@ class _SettingPageState extends State<SettingPage> {
           SettingOption(
               title: "Storage and data",
               subtitle: "Network usage,auto-download",
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => StorageDataPage()));
+              },
               leading: Icons.data_usage_outlined),
           SettingOption(
               title: "App language",
