@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/chats/chats_list_item.dart';
+import 'package:whatsapp_design/src/features/settings/settings_page.dart';
 
 class Chats extends StatelessWidget {
   const Chats({super.key});
