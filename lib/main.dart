@@ -1,6 +1,7 @@
-import 'dart:collection';
+
 
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/colors.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class WhatsApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Map<int, Color> swatch = new Map();
+    
 
     return MaterialApp(
       title: 'Whatsapp',
@@ -27,7 +28,7 @@ class WhatsApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green
+        primarySwatch:wpgreen,
       ),
       home: DashboardPage(),
       debugShowCheckedModeBanner: false,

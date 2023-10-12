@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/features/settings/profile.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
 
@@ -24,7 +25,10 @@ class _SettingPageState extends State<SettingPage> {
               title: " Abin Berly",
               subtitle: " To infinity and beyond",
               trailing: Icons.qr_code_2,
-              onTap: (){}),
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Profile()));
+
+              }),
          const SizedBox(height: 20,),
           SettingOption(
               title: "Account",
