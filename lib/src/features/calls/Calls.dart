@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/helper/callType-helper.dart';
 import 'package:whatsapp_design/src/core/helper/titleColor-helper.dart';
+import 'package:whatsapp_design/src/features/calls/call_link/call_link.dart';
 import 'package:whatsapp_design/src/features/calls/calls_list_item.dart';
 
 class Calls extends StatelessWidget {
@@ -33,6 +34,9 @@ class Calls extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: Text("Share a link for your WhatsApp call"),
+          onTap: (){
+            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CallLinkPage()));
+          },
         ),
         SizedBox(
           height: 5,
