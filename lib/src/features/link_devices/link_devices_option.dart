@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/strings.dart';
 
 class LinkDeviceOption extends StatelessWidget {
   const LinkDeviceOption({Key? key}) : super(key: key);
@@ -8,15 +9,15 @@ class LinkDeviceOption extends StatelessWidget {
     return Card(
       child:Column(
         children: [
-          Image.asset("assets/images/link_devices.jpg",height: 350,width: double.maxFinite,),
+          Image.asset("assets/images/link_devices.jpg",height: MediaQuery.of(context).size.height * 0.25,width: MediaQuery.of(context).size.width,),
 
           Center(
-            child: RichText(text: const TextSpan(
+            child: RichText(text: TextSpan(
               children:[TextSpan(
-                text:"Use WhatsApp on Web, Desktop, and other devices.",style: TextStyle(color: Colors.grey)
+                text:Strings.useWhatsapp,style: TextStyle(color: Colors.grey)
               ),
                 TextSpan(
-                  text:"Learn more",style: TextStyle(color: Colors.blue),
+                  text:Strings.learnMore,style: TextStyle(color: Colors.blue),
                 )
 
 
@@ -31,7 +32,7 @@ class LinkDeviceOption extends StatelessWidget {
               height: 50,
               width: double.maxFinite,
               child: ElevatedButton(onPressed: (){},
-                  child: const Text("Link a device"),
+                  child:  Text(Strings.linkDevice),
                   style: ElevatedButton.styleFrom(shape: StadiumBorder())),
             ),
           ),

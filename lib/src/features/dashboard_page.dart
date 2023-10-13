@@ -5,6 +5,7 @@ import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/features/calls/Calls.dart';
 import 'package:whatsapp_design/src/features/chats/Chats.dart';
 import 'package:whatsapp_design/src/features/Community.dart';
+import 'package:whatsapp_design/src/features/link_devices/link_devices.dart';
 import 'package:whatsapp_design/src/features/status/Status.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -66,6 +67,9 @@ class _DashboardPageState extends State<DashboardPage>
                   case MenuOptions.newBroadcast:
                     break;
                   case MenuOptions.linkedDevices:
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const LinkDevices()));
+
                     break;
                   case MenuOptions.starredMessages:
                     break;

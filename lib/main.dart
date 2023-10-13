@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/colors.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
 
@@ -17,7 +18,7 @@ class WhatsApp extends StatelessWidget {
       title: Strings.appTitle,
       theme: ThemeData(
 
-        primarySwatch: Colors.green
+        primarySwatch: wpgreen,
       ),
       home: DashboardPage(),
       debugShowCheckedModeBanner: false,

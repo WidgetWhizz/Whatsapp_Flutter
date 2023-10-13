@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/link_devices/link_devices_option.dart';
 import 'package:whatsapp_design/src/features/link_devices/linked_devices_status.dart';
+import 'package:whatsapp_design/src/strings.dart';
 
 
 class LinkDevices extends StatefulWidget {
@@ -15,7 +16,7 @@ class _LinkDevicesState extends State<LinkDevices> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
-      title: const Text("Linked devices"),
+      title: Text(Strings.linkedDevices),
       backgroundColor: Color(0xff075E54),
     ),
       body: ListView(
