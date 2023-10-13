@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
+import 'package:whatsapp_design/src/strings.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({super.key});
@@ -14,62 +15,62 @@ class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Settings",textAlign: TextAlign.left,style: TextStyle(color: Colors.white),),automaticallyImplyLeading: true,
+      appBar: AppBar(title:  Text(Strings.settings,textAlign: TextAlign.left,style: TextStyle(color: Colors.white),),automaticallyImplyLeading: true,
       backgroundColor: const Color(0xff075e54),),
       
       body: ListView(
         children: [
           const SizedBox(height: 10,),
           ProfileOption(
-              title: " Abin Berly",
-              subtitle: " To infinity and beyond",
+              title: Strings.name,
+              subtitle: Strings.status,
               trailing: Icons.qr_code_2,
               onTap: (){}),
          const SizedBox(height: 20,),
           SettingOption(
-              title: "Account",
-              subtitle: "Security notifications,change number",
+              title: Strings.account,
+              subtitle: Strings.securityAndChangeNumber,
               onTap: (){
 
           }, leading: Icons.key,),
           SettingOption(
-              title: "Privacy",
-              subtitle: "Block contact,disappearing messages",
+              title: Strings.privacy,
+              subtitle: Strings.blockAndMessages,
               onTap: (){},
               leading: Icons.lock
           ),
           SettingOption(
-              title: "Avatar",
-              subtitle: "Create,edit,profile photo",
+              title: Strings.avatar,
+              subtitle: Strings.createEdit,
               onTap: (){},
               leading: Icons.person),
           SettingOption(
-              title: "Chats",
-              subtitle: "Theme,wallpapers,chat history",
+              title: Strings.chats,
+              subtitle: Strings.themeAndWallpaper,
               onTap: (){},
               leading: Icons.chat),
           SettingOption(
-              title: "Notifications",
-              subtitle: "Message,group & call tones",
+              title: Strings.notifications,
+              subtitle: Strings.messageGroupCall,
               onTap: (){},
               leading: Icons.notifications),
           SettingOption(
-              title: "Storage and data",
-              subtitle: "Network usage,auto-download",
+              title: Strings.storageAndData,
+              subtitle: Strings.networkUsage,
               onTap: (){},
               leading: Icons.data_usage_outlined),
           SettingOption(
-              title: "App language",
-              subtitle: "English(device's language)",
+              title: Strings.appLanguage,
+              subtitle: Strings.english,
               onTap: (){},
               leading: Icons.circle_outlined),
           SettingOption(
-              title: "Help",
-              subtitle: "Help centre, contact us, privacy policy",
+              title: Strings.help,
+              subtitle: Strings.helpCentre,
               onTap: (){},
               leading: Icons.arrow_circle_down),
           SettingOption(
-              title: "Invite a friend",
+              title: Strings.inviteFriend,
               subtitle: "",
               onTap: (){},
               leading: Icons.group),
@@ -77,8 +78,8 @@ class _SettingPageState extends State<SettingPage> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text("from",style: TextStyle(color: Colors.grey),),
-              Image.network("https://static.vecteezy.com/system/resources/previews/022/100/699/original/meta-logo-transparent-free-png.png",height: 100,width: 200,),
+              Text(Strings.from,style: TextStyle(color: Colors.grey),),
+                Image.asset("assets/images/meta.jpeg"),
               const SizedBox(height: 60,),
               
 
