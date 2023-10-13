@@ -6,7 +6,7 @@ class Community extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+
     return const Text(Strings.communityTabText);
   }
 
