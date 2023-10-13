@@ -15,8 +15,7 @@ class Status extends StatelessWidget {
         ),
         ListTile(
           leading: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg'),
+              backgroundImage: NetworkImage(Strings.chat1DP),
               radius: 40,
               child: Stack(children: [
                 Align(

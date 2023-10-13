@@ -49,8 +49,7 @@ class Calls extends StatelessWidget {
           callerName: Strings.caller1,
           titleColor: TitleColorHelper.getTitleColor(calltype[0]),
           callTypeImage: CallTypeHelper.callType(calltype[0]),
-          userImage:
-              'https://www.epicscotland.com/wp-content/uploads/2018/01/Business-Headshot_002.jpg',
+          userImage: Strings.chat2DP,
           dateTime: DateTime(2023, 9, 12, 10, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[0]),
           imagePath: 'assets/images/video_call2.png',
@@ -59,8 +58,7 @@ class Calls extends StatelessWidget {
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage:
-              'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg',
+          userImage: Strings.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
           imagePath: 'assets/images/green_call.png',
@@ -69,8 +67,7 @@ class Calls extends StatelessWidget {
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage:
-          'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg',
+          userImage: Strings.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
           imagePath: 'assets/images/green_call.png',
@@ -79,8 +76,7 @@ class Calls extends StatelessWidget {
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage:
-          'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg',
+          userImage:Strings.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
           imagePath: 'assets/images/green_call.png',
