@@ -7,6 +7,9 @@ class Strings{
  static final String lastActivity="Last active yesterday at 11:02 pm ";
  static final String useWhatsapp="Use WhatsApp on Web, Desktop, and other devices. ";
  static final String learnMore= "Learn more";
+ static final String personalMessages= "Your personal messages are ";
+ static final String endToEnd= "end-to-end encrypted ";
+ static final String onAllDevices = "on all your devices.";
 
 
 
