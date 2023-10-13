@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
+import 'package:whatsapp_design/src/features/calls/call_link/option_button.dart';
 
 class CallLinkPage extends StatelessWidget {
   const CallLinkPage({Key? key}) : super(key: key);
@@ -7,7 +9,7 @@ class CallLinkPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Create Call Link"),
+        title:const Text(Strings.createCallLink),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
@@ -17,7 +19,7 @@ class CallLinkPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom: 16),
               child: Text(
-                "Anyone with WhatsApp can use this link to join this call. Only share it with people you trust.",
+               Strings.joinThisCall,
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
@@ -37,7 +39,7 @@ class CallLinkPage extends StatelessWidget {
                 ),
                 SizedBox(width: 16),
                 Text(
-                  "https://call.whatsapp.com/video/geDRT3yDAUsRMuod9z9Vz2",
+                  Strings.links,
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.blue,
@@ -49,8 +51,7 @@ class CallLinkPage extends StatelessWidget {
             Row(
               children: [
                 SizedBox(width: 45,),
-                Text(
-                  "Call Type",
+                Text(Strings.callType,
                   style: TextStyle(
                     fontSize: 18,
                   ),
@@ -62,7 +63,7 @@ class CallLinkPage extends StatelessWidget {
               children: [
                 SizedBox(width: 45,),
                 Text(
-                  "Video",
+                  Strings.video,
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey,
@@ -73,52 +74,21 @@ class CallLinkPage extends StatelessWidget {
             SizedBox(height: 16),
             OptionButton(
               icon: Icons.arrow_outward_sharp,
-              label: "Send link via WhatsApp",
+              label: Strings.sendLinkWhatsapp,
             ),
             SizedBox(height: 16),
             OptionButton(
               icon: Icons.copy,
-              label: "Copy link",
+              label: Strings.copyLink,
             ),
             SizedBox(height: 16),
             OptionButton(
               icon: Icons.share,
-              label: "Share Link",
+              label: Strings.shareLink,
             ),
           ],
         ),
       ),
-    );
-  }
-}
-
-class OptionButton extends StatelessWidget {
-  final dynamic icon;
-  final String label;
-
-
-  const OptionButton({
-    Key? key,
-    required this.icon,
-    required this.label,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    Widget iconWidget = Icon(Icons.error, size: 30, color: Colors.red);
-
-    if (icon is IconData) {
-      iconWidget = Icon(icon, size: 30, color: Colors.grey);
-    } else if (icon is Image) {
-      iconWidget = icon;
-    }
-
-     return Row(
-      children: [
-        iconWidget,
-         SizedBox(width: 16),
-        Text(label, style: TextStyle(fontSize: 16)),
-      ],
     );
   }
 }

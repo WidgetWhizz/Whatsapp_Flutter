@@ -38,7 +38,17 @@ class Strings{
   static const tab2 = "Chats";
   static const tab3 = "Status";
   static const tab4 = "Calls";
+  static const video = "Video";
+  static const sendLinkWhatsapp = "Send link via WhatsApp";
+  static const callType = "Call Type";
+  static const copyLink = "Copy link";
+  static const shareLink ="Share link";
+
+  static const links = "https://call.whatsapp.com/video/geDRT3yDAUsRMuod9z9Vz2";
 
   static const communityTabText = "Community widget";
+  static const createCallLink = "Create Call Link";
+  static const joinThisCall =
+  "Anyone with WhatsApp can use this link to join this call. Only share it with people you trust.";
 
 }
