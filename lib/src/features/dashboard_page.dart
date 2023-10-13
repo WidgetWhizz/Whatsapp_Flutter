@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_design/src/features/CameraPage/camera.dart';
 import 'package:whatsapp_design/src/features/calls/Calls.dart';
 import 'package:whatsapp_design/src/features/chats/Chats.dart';
 import 'package:whatsapp_design/src/features/community/Community.dart';
@@ -29,7 +28,7 @@ class _DashboardPageState extends State<DashboardPage> with SingleTickerProvider
           title: Text("Whatsapp"),
           actions: [
             IconButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder:(context)=>WhatsAppCamera()));
+
             }, icon: Icon(Icons.camera_alt_outlined)),
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
             PopupMenuButton<String>(
