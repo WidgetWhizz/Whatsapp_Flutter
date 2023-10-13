@@ -39,7 +39,7 @@ class _CommunityPageState extends State<CommunityPage> {
         unreadCount: 0),
     Community(
         name: 'Announcements',
-        lastMessage: 'Cochin University ',
+        lastMessage: 'Cochin University',
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/speaker.jpeg',
         unreadCount: 0),
