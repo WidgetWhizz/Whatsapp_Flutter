@@ -14,7 +14,7 @@ class Strings{
   static const updateStatus2Name = "Aditya Shigwan";
 
   static const oldStatus1Name = "Anlin P Jose";
-  static const oldStatus2Name = "Abin Berley";
+  static const oldStatus2Name = "Abin Berly";
 
   static const callType1 = "outgoing missed call";
   static const callType2 = "incoming missed call";
@@ -33,10 +33,28 @@ class Strings{
   static const option4 = "Starred messages";
   static const option5 = "Payments";
   static const option6 = "Settings";
+  static const storageData = "Storage and Data";
 
   static const tab2 = "Chats";
   static const tab3 = "Status";
   static const tab4 = "Calls";
+  static const manageStorage =  "Manage storage";
+  static const dataUsed = "5.9 GB";
+  static const networkUsage = "Network usage";
+  static const sendReceived = "5.9 GB sent. 63.6 GB received";
+  static const lessDataCalls = "Use less data for calls";
+  static const proxy = "Proxy";
+  static const off = "Off";
+  static const autoDownload= "Media auto-download";
+  static const voiceMessagesAuto= "Voice messages are always automatically";
+  static const downloaded= "downloaded";
+  static const whenMobileData= "When using mobile data";
+  static const documents= "Documents";
+  static const whenWifi= "When connected on Wi-Fi";
+  static const allMedia="All media";
+  static const whenRoaming="When roaming";
+  static const noMedia="No media";
+
 
   static const communityTabText = "Community widget";
 

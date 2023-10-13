@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
 
 class StorageDataPage extends StatelessWidget {
   const StorageDataPage({super.key});
@@ -9,16 +11,16 @@ class StorageDataPage extends StatelessWidget {
     bool _isSwitched = false;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Storage and data",textAlign: TextAlign.left,),
-        backgroundColor: Color(0xff075e54),
+        title: Text(Strings.storageData,textAlign: TextAlign.left,),
+        backgroundColor: wpgreen,
         centerTitle: false,
       ),
       body: ListView(
         children: <Widget> [
           ListTile(
             leading: Icon(Icons.folder),
-            title: Text("Manage storage"),
-            subtitle: Text("5.9 GB"),
+            title: Text(Strings.manageStorage),
+            subtitle: Text(Strings.dataUsed),
             onTap: () {
 
             },
@@ -26,8 +28,8 @@ class StorageDataPage extends StatelessWidget {
           Divider(),
           ListTile(
             leading: Icon(Icons.data_usage_outlined),
-            title: Text("Network usage"),
-            subtitle: Text("5.9 GB sent. 63.6 GB received"),
+            title: Text(Strings.networkUsage),
+            subtitle: Text(Strings.sendReceived),
             onTap: () {
 
             },
@@ -37,7 +39,7 @@ class StorageDataPage extends StatelessWidget {
       padding: const EdgeInsets.only(left: 50.0),
       child: ListTile(
 
-      title: Text("Use less data for calls"),
+      title: Text(Strings.lessDataCalls),
       trailing: Switch(
       value: _isSwitched,
       onChanged: (bool value) {
@@ -62,8 +64,8 @@ class StorageDataPage extends StatelessWidget {
             padding: const EdgeInsets.only(left: 50.0),
             child: ListTile(
 
-              title: Text("Proxy"),
-              subtitle: Text("Off"),
+              title: Text(Strings.proxy),
+              subtitle: Text(Strings.off),
               onTap: () {
 
               },
@@ -72,12 +74,12 @@ class StorageDataPage extends StatelessWidget {
           Divider(),
           ListTile(
 
-            title: Text("Media auto-download"),
+            title: Text(Strings.autoDownload),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text("Voice messages are always automatically"),
-                Text("downloaded"),
+                Text(Strings.voiceMessagesAuto),
+                Text(Strings.downloaded),
               ],
             ),
             onTap: () {
@@ -88,8 +90,8 @@ class StorageDataPage extends StatelessWidget {
             padding: const EdgeInsets.only(left: 50.0),
             child: ListTile(
 
-              title: Text("When using mobile data"),
-              subtitle: Text("Documents"),
+              title: Text(Strings.whenMobileData),
+              subtitle: Text(Strings.documents),
               onTap: () {
 
               },
@@ -99,8 +101,8 @@ class StorageDataPage extends StatelessWidget {
             padding: const EdgeInsets.only(left: 50.0),
             child: ListTile(
 
-              title: Text("When connected on Wi-Fi"),
-              subtitle: Text("All media"),
+              title: Text(Strings.whenWifi),
+              subtitle: Text(Strings.allMedia),
               onTap: () {
 
               },
@@ -110,8 +112,8 @@ class StorageDataPage extends StatelessWidget {
             padding: const EdgeInsets.only(left: 50.0),
             child: ListTile(
 
-              title: Text("When roaming"),
-              subtitle: Text("No media"),
+              title: Text(Strings.whenRoaming),
+              subtitle: Text(Strings.noMedia),
               onTap: () {
 
               },
