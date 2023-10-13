@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_design/src/features/account/account_page.dart';
+
 import 'package:whatsapp_design/src/features/privacy/privacy_page.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
@@ -32,8 +32,6 @@ class _SettingPageState extends State<SettingPage> {
               title: "Account",
               subtitle: "Security notifications,change number",
               onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AccountPage()));
-
                 }, leading: Icons.key,),
           SettingOption(
               title: "Privacy",
