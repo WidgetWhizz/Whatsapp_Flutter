@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/core/helper/datetime-helper.dart';
 import 'package:whatsapp_design/src/features/status/status_list_item.dart';
 
@@ -26,22 +27,8 @@ class Status extends StatelessWidget {
                   ),
                 ),
               ])),
-
-          // CircleAvatar(
-          //   backgroundImage: NetworkImage(
-          //       'https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg'),
-          //   radius: 40,
-          // ),
-          // Positioned(
-          //   child: RawMaterialButton(
-          //     fillColor: Colors.green,
-          //     child: Icon(Icons.add_circle, color: Colors.white,),
-          //     padding: EdgeInsets.all(5.0),
-          //     shape: CircleBorder(),
-          //   ),
-          // ),
-          title:
-              Text("My Status", style: TextStyle(fontWeight: FontWeight.bold)),
+          title: const Text(Strings.statusLabel,
+              style: TextStyle(fontWeight: FontWeight.bold)),
           subtitle: Text(DateTimeHelper.getFormattedDate(DateTime.now())),
           trailing: Image.asset(
             'assets/images/3dots_icon.jpg',
@@ -55,17 +42,17 @@ class Status extends StatelessWidget {
         ),
         Container(
             margin: EdgeInsets.only(left: 15),
-            child: Text("Recent updates",
+            child: const Text(Strings.statusUpdateLabel,
                 style: TextStyle(fontWeight: FontWeight.bold))),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         StatusListItem(
-            contactName: "Ishan Pai",
+            contactName: Strings.updateStatus1Name,
             dateTime: DateTime.now(),
             imagePath: 'manhattan_bridge.jpg'),
         StatusListItem(
-            contactName: "Aditya Shigwan",
+            contactName: Strings.updateStatus2Name,
             dateTime: DateTime(2023, 9, 17, 11, 26),
             imagePath: 'gate_way_of_india.jpg'),
         SizedBox(
@@ -73,14 +60,15 @@ class Status extends StatelessWidget {
         ),
         Container(
             margin: EdgeInsets.only(left: 15),
-            child: Text("Viewed updates",
-                style: TextStyle(fontWeight: FontWeight.bold))),
+            child: const Text(Strings.statusOldLabel,
+                style: TextStyle(fontWeight: FontWeight.bold))
+        ),
         StatusListItem(
-            contactName: "Anlin P Jose",
+            contactName: Strings.oldStatus1Name,
             dateTime: DateTime.now(),
             imagePath: 'manhattan_bridge.jpg'),
         StatusListItem(
-            contactName: "Abin Berley",
+            contactName: Strings.oldStatus2Name,
             dateTime: DateTime(2023, 9, 17, 11, 26),
             imagePath: 'gate_way_of_india.jpg'),
       ],
