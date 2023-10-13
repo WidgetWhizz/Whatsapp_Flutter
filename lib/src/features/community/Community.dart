@@ -64,7 +64,7 @@ class _CommunityPageState extends State<CommunityPage> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(95),
                   child: Image.asset(
-                    communities[index].imageAsset ?? 'default_image.png',
+                    communities[index].imageAsset,
                     width: 50,
                     height: 50,
                   ),
