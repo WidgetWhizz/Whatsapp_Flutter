@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/Strings.dart';
 
 class WhatsAppPrivacyPage extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text('Privacy'),
+        title: Text(Strings.PrivacyTitle),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -20,7 +21,7 @@ class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                'Who can see my personal info',
+                Strings.Privacy2,
                 style: TextStyle(
                   fontSize: 12.0,
 
@@ -28,60 +29,60 @@ class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
               ),
             ),
             ListTile(
-              title: Text('Profile photo'),
-              subtitle: Text('My contacts'),
+              title: Text(Strings.Privacy3),
+              subtitle: Text(Strings.Privacy4),
 
               ),
 
             ListTile(
-              title: Text('Last seen and online'),
-              subtitle: Text('Nobody'),
+              title: Text(Strings.Privacy5),
+              subtitle: Text(Strings.Privacy6),
 
             ),
             ListTile(
-              title: Text('About'),
-              subtitle: Text('329 contacts excluded'),
+              title: Text(Strings.Privacy7),
+              subtitle: Text(Strings.Privacy8),
 
             ),
             ListTile(
-              title: Text('Status'),
-              subtitle: Text('261 contacts selected'),
+              title: Text(Strings.Privacy9),
+              subtitle: Text(Strings.Privacy10),
 
             ),
             ListTile(
-              title: Text('Read receipts'),
-              subtitle: Text('If turned off, you won\'t send or receive Read receipts. Read receipts are always sent for group chats.'),
+              title: Text(Strings.Privacy11),
+              subtitle: Text(Strings.Privacy12),
               trailing: Switch(
                 value: true,
                 onChanged: (value) {},
               ),
             ),
             ListTile(
-              title: Text('Disappearing messages'),
-              subtitle: Text('Default message timer'),
+              title: Text(Strings.Privacy13),
+              subtitle: Text(Strings.Privacy14),
 
             ),
             ListTile(
-              title: Text('Start new chats with disappearing messages set to your timer'),
+              title: Text(Strings.Privacy15),
               subtitle: null,
 
             ),
             ListTile(
-              title: Text('Groups'),
-              subtitle: Text('My contacts'),
+              title: Text(Strings.Privacy16),
+              subtitle: Text(Strings.Privacy17),
 
             ),
             ListTile(
-              title: Text('Live Location'),
-              subtitle: Text('None'),
+              title: Text(Strings.Privacy18),
+              subtitle: Text(Strings.Privacy19),
             ),
             ListTile(
-              title: Text('Blocked contacts'),
-              subtitle: Text('7'),
+              title: Text(Strings.Privacy20),
+              subtitle: Text(Strings.Privacy21),
             ),
             ListTile(
-              title: Text('Fingerprint lock'),
-              subtitle: Text('Disabled'),
+              title: Text(Strings.Privacy22),
+              subtitle: Text(Strings.Privacy23),
             ),
           ],
         ),
