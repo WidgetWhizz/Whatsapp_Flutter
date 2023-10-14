@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/constants/Strings.dart';
 
-class WhatsAppPrivacyPage extends StatefulWidget {
+class PrivacyPage extends StatefulWidget {
   @override
-  _WhatsAppPrivacyPageState createState() => _WhatsAppPrivacyPageState();
+  _PrivacyPageState createState() => _PrivacyPageState();
 }
 
-class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
+class _PrivacyPageState extends State<PrivacyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

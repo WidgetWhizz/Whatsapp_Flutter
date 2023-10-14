@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
+import 'package:whatsapp_design/src/core/constants/option_menu_enum.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
+import 'package:whatsapp_design/src/features/Privacy/privacy_page.dart';
 import 'package:whatsapp_design/src/features/calls/Calls.dart';
 import 'package:whatsapp_design/src/features/chats/Chats.dart';
-import 'package:whatsapp_design/src/features/Community.dart';
-import 'package:whatsapp_design/src/features/settings/settings_page.dart';
+import 'package:whatsapp_design/src/features/community/Community.dart';
 import 'package:whatsapp_design/src/features/status/Status.dart';
 
 class DashboardPage extends StatefulWidget {
@@ -23,46 +26,58 @@ class _DashboardPageState extends State<DashboardPage>
   }
 
   @override
-  Widget build(BuildContext mainContext) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Color(0xff075e54),
-          title: Text("Whatsapp"),
+          backgroundColor: wpgreen,
+          title: Text(Strings.appTitle),
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-            PopupMenuButton<String>(onSelected: (value) {
-              if (value == "Settings") {
-                Navigator.of(mainContext).push(MaterialPageRoute(
-                    builder: (context) => const SettingPage()));
-              }
-            }, itemBuilder: (BuildContext context) {
-              return [
+            PopupMenuButton<MenuOptions>(
+              itemBuilder: (BuildContext context) => [
                 const PopupMenuItem(
-                  child: Text("New group"),
-                  value: "New group",
+                  value: MenuOptions.newGroup,
+                  child: Text(Strings.option1),
                 ),
-                PopupMenuItem(
-                  child: Text("New broadcast"),
-                  value: "New broadcast",
+                const PopupMenuItem(
+                  value: MenuOptions.newBroadcast,
+                  child: Text(Strings.option2),
                 ),
-                PopupMenuItem(
-                  child: Text("Linked devices"),
-                  value: "Linked devices",
+                const PopupMenuItem(
+                  value: MenuOptions.linkedDevices,
+                  child: Text(Strings.option3),
                 ),
-                PopupMenuItem(
-                  child: Text("Starred messages"),
-                  value: "Starred messages",
+                const PopupMenuItem(
+                  value: MenuOptions.starredMessages,
+                  child: Text(Strings.option4),
                 ),
-                PopupMenuItem(
-                  child: Text("Payments"),
-                  value: "Payments",
+                const PopupMenuItem(
+                  value: MenuOptions.payments,
+                  child: Text(Strings.option5),
                 ),
-                PopupMenuItem(
-                  child: Text("Settings"),
-                  value: "Settings",
+                const PopupMenuItem(
+                  value: MenuOptions.settings,
+                  child: Text(Strings.option6),
                 ),
-              ];
-            })
+              ],
+              onSelected: (value) {
+                switch (value) {
+                  case MenuOptions.newGroup:
+                    break;
+                  case MenuOptions.newBroadcast:
+                    break;
+                  case MenuOptions.linkedDevices:
+                    break;
+                  case MenuOptions.starredMessages:
+                    break;
+                  case MenuOptions.payments:
+                    break;
+                  case MenuOptions.settings:
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => WhatsAppPrivacyPage()));
+                    break;
+                }
+              },
+            )
           ],
           bottom: TabBar(
               controller: tabController,
@@ -76,21 +91,21 @@ class _DashboardPageState extends State<DashboardPage>
                     height: 20,
                   ),
                 ),
-                Tab(
-                  text: "Chats",
+                const Tab(
+                  text: Strings.tab2,
                 ),
-                Tab(
-                  text: "Status",
+                const Tab(
+                  text: Strings.tab3,
                 ),
-                Tab(
-                  text: "Calls",
+                const Tab(
+                  text: Strings.tab4,
                 ),
               ])),
       body: SafeArea(
           child: TabBarView(
-        children: [CommunityPage(), Chats(), Status(), Calls()],
-        controller: tabController,
-      )),
+            children: [CommunityPage(), Chats(), Status(), Calls()],
+            controller: tabController,
+          )),
     );
   }
 }

@@ -37,7 +37,7 @@ class _SettingPageState extends State<SettingPage> {
               title: "Privacy",
               subtitle: "Block contact,disappearing messages",
               onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>WhatsAppPrivacyPage()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>PrivacyPage()));
               },
               leading: Icons.lock
           ),
