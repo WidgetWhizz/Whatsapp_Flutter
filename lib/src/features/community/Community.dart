@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/Strings.dart';
 
 class CommunityPage extends StatefulWidget {
   @override
@@ -8,38 +9,38 @@ class CommunityPage extends StatefulWidget {
 class _CommunityPageState extends State<CommunityPage> {
   List<Community> communities = [
     Community(
-        name: 'New community',
+        name: Strings.communityName1,
         lastMessage: '',
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/img.png',
         unreadCount: 0),
     Community(
-        name: 'Devtown Backend Web Development',
+        name: Strings.communityName6,
         lastMessage: '',
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/devtown.png',
         unreadCount: 0),
     Community(
-        name: 'Announcements',
-        lastMessage: '~khushi:The class has already started',
+        name: Strings.communityName2,
+        lastMessage: Strings.communitylastMessage1,
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/speaker.jpeg',
         unreadCount: 0),
     Community(
-        name: 'View all',
+        name: Strings.communityName3,
         lastMessage: ' ',
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/img_1.png',
         unreadCount: 0),
     Community(
-        name: 'Cusat Update',
+        name: Strings.communityName4,
         lastMessage: '',
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/img_2.png',
         unreadCount: 0),
     Community(
-        name: 'Announcements',
-        lastMessage: 'Cochin University',
+        name: Strings.communityName5,
+        lastMessage: Strings.communitylastMessage2,
         lastMessageDate: DateTime.parse('2023-08-16'),
         imageAsset: 'assets/images/speaker.jpeg',
         unreadCount: 0),
