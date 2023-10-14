@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class ProfileOption extends StatelessWidget {
   final String title;
@@ -21,7 +22,7 @@ class ProfileOption extends StatelessWidget {
     return ListTile(
 
 
-      leading:const CircleAvatar(radius: 30,
+      leading: CircleAvatar(radius: 10.sp,
         backgroundImage: AssetImage("assets/images/profiles.jpeg"),
        ),
       title: Text(title,style:TextStyle(color: Colors.black)),

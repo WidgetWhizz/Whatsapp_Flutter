@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
+import 'package:whatsapp_design/src/features/settings/storage_and_data/storage__data_page.dart';
 import 'package:whatsapp_design/src/strings.dart';
 
 class SettingPage extends StatefulWidget {
@@ -16,17 +19,17 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:  Text(Strings.settings,textAlign: TextAlign.left,style: TextStyle(color: Colors.white),),automaticallyImplyLeading: true,
-      backgroundColor: const Color(0xff075e54),),
+      backgroundColor: wpgreen),
       
       body: ListView(
         children: [
-          const SizedBox(height: 10,),
+           SizedBox(height: 1.h,),
           ProfileOption(
               title: Strings.name,
               subtitle: Strings.status,
               trailing: Icons.qr_code_2,
               onTap: (){}),
-         const SizedBox(height: 20,),
+          SizedBox(height: 2.h,),
           SettingOption(
               title: Strings.account,
               subtitle: Strings.securityAndChangeNumber,
@@ -57,7 +60,9 @@ class _SettingPageState extends State<SettingPage> {
           SettingOption(
               title: Strings.storageAndData,
               subtitle: Strings.networkUsage,
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>StorageDataPage()));
+              },
               leading: Icons.data_usage_outlined),
           SettingOption(
               title: Strings.appLanguage,
@@ -74,13 +79,13 @@ class _SettingPageState extends State<SettingPage> {
               subtitle: "",
               onTap: (){},
               leading: Icons.group),
-          const SizedBox(height: 60,),
+           SizedBox(height: 6.h,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(Strings.from,style: TextStyle(color: Colors.grey),),
-                Image.asset("assets/images/meta.jpeg"),
-              const SizedBox(height: 60,),
+                Image.asset("assets/images/meta.jpeg",height:10.h,width: 10.w,),
+               SizedBox(height: 6.h,),
               
 
 

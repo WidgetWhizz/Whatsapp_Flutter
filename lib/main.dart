@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
 
@@ -13,14 +14,19 @@ class WhatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return MaterialApp(
-      title: Strings.appTitle,
-      theme: ThemeData(
+    return Sizer(
+      builder: (BuildContext context, Orientation orientation, DeviceType deviceType){
+      return MaterialApp(
+        title: Strings.appTitle,
+        theme: ThemeData(
 
-        primarySwatch: Colors.green
-      ),
-      home: DashboardPage(),
-      debugShowCheckedModeBanner: false,
+          primarySwatch: Colors.green
+        ),
+        home: DashboardPage(),
+        debugShowCheckedModeBanner: false,
+      );
+
+  }
     );
   }
 }

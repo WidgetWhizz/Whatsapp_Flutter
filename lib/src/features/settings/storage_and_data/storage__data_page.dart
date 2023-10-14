@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/constants/colors.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
+import 'package:sizer/sizer.dart';
 
 class StorageDataPage extends StatelessWidget {
   const StorageDataPage({super.key});
@@ -36,7 +37,7 @@ class StorageDataPage extends StatelessWidget {
           ),
 
     Padding(
-      padding: const EdgeInsets.only(left: 50.0),
+      padding:  EdgeInsets.only(left: 5.w),
       child: ListTile(
 
       title: Text(Strings.lessDataCalls),
@@ -61,7 +62,7 @@ class StorageDataPage extends StatelessWidget {
       ),
     ),
           Padding(
-            padding: const EdgeInsets.only(left: 50.0),
+            padding:  EdgeInsets.only(left: 5.w),
             child: ListTile(
 
               title: Text(Strings.proxy),
@@ -87,7 +88,7 @@ class StorageDataPage extends StatelessWidget {
             },
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 50.0),
+            padding:  EdgeInsets.only(left: 5.w),
             child: ListTile(
 
               title: Text(Strings.whenMobileData),
@@ -98,7 +99,7 @@ class StorageDataPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 50.0),
+            padding:  EdgeInsets.only(left: 5.w),
             child: ListTile(
 
               title: Text(Strings.whenWifi),
@@ -109,7 +110,7 @@ class StorageDataPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 50.0),
+            padding:  EdgeInsets.only(left: 5.w),
             child: ListTile(
 
               title: Text(Strings.whenRoaming),
