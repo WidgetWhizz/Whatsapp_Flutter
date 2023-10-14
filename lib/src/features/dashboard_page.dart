@@ -53,6 +53,7 @@ class _DashboardPageState extends State<DashboardPage>
                 const PopupMenuItem(
                   value: MenuOptions.payments,
                   child: Text(Strings.option5),
+
                 ),
                 const PopupMenuItem(
                   value: MenuOptions.settings,

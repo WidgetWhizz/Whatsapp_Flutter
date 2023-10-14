@@ -45,7 +45,7 @@ class Calls extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        CallList(
+        CallListItem(
           callerName: Strings.caller1,
           titleColor: TitleColorHelper.getTitleColor(calltype[0]),
           callTypeImage: CallTypeHelper.callType(calltype[0]),
@@ -54,7 +54,7 @@ class Calls extends StatelessWidget {
           imageColor: TitleColorHelper.getTitleColor(calltype[0]),
           imagePath: 'assets/images/video_call2.png',
         ),
-        CallList(
+        CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
@@ -63,7 +63,7 @@ class Calls extends StatelessWidget {
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
           imagePath: 'assets/images/green_call.png',
         ),
-        CallList(
+        CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
@@ -72,7 +72,7 @@ class Calls extends StatelessWidget {
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
           imagePath: 'assets/images/green_call.png',
         ),
-        CallList(
+        CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),

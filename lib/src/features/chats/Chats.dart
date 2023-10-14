@@ -14,7 +14,7 @@ class Chats extends StatelessWidget {
       const SizedBox(
         height: 10.0,
       ),
-      ChatListItemWidget(
+      ChatListItem(
           title: Strings.chat1Title,
           subTitle: Strings.chat1SubTitle,
           image: Strings.chat1DP,
@@ -23,7 +23,7 @@ class Chats extends StatelessWidget {
       const SizedBox(
         height: 10.0,
       ),
-      ChatListItemWidget(
+      ChatListItem(
           title: Strings.chat2Title,
           subTitle: Strings.chat2SubTitle,
           image: Strings.chat2DP,

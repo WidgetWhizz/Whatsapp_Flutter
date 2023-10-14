@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/helper/datetime-helper.dart';
 import 'package:whatsapp_design/src/core/theme/text_theme.dart';
 
-class ChatListItemWidget extends StatelessWidget {
+class ChatListItem extends StatelessWidget {
   final String title;
   final String subTitle;
   final String image;
   final DateTime lastChatTime;
   final int unreadCount;
 
-  const ChatListItemWidget(
+  const ChatListItem(
       {super.key,
       required this.title,
       required this.subTitle,
