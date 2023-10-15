@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
 
 class PaymentSend extends StatelessWidget {
   const PaymentSend({super.key});
@@ -14,22 +16,22 @@ class PaymentSend extends StatelessWidget {
           ListTile(
             leading: Icon(
               Icons.currency_rupee_outlined,
-              color: Color(0xff075E54),
+              color: wpgreenAccent,
               size: 20,
             ),
             title: Text(
-              "Send Payment",
+              Strings.sendpay,
               style: TextStyle(color: Colors.black),
             ),
           ),
           ListTile(
             leading: Icon(
               Icons.qr_code,
-              color: Color(0xff075E54),
+              color: wpgreenAccent,
               size: 20,
             ),
             title: Text(
-              "Scan Payment QR code",
+              Strings.qrcode,
               style: TextStyle(color: Colors.black),
             ),
           ),

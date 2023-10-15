@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
+import 'package:whatsapp_design/src/core/constants/images.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
 
 class PaymentMethod extends StatelessWidget {
   const PaymentMethod({super.key});
@@ -13,24 +16,23 @@ class PaymentMethod extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             Text(
-              "    Payment methods",
+              Strings.paymentMethods,
               style: TextStyle(
-                color: Color(0xff075E54),
+                color: wpgreen,
                 fontSize: 15,
               ),
             ),
             ListTile(
               leading: CircleAvatar(
                 radius: 50,
-                backgroundImage: NetworkImage(
-                    "https://play-lh.googleusercontent.com/3k0f2yWl15mhkyltVQoqwmfRcm6ywTDYOttNHusElScrqjxYHLK82oVnjt3wQJQyPw"),
+                backgroundImage: NetworkImage(Images.accountDP),
               ),
               title: Text(
-                "ICICI Bank **90397347 via UPI",
+                Strings.bankUPI,
                 style: TextStyle(color: Colors.black),
               ),
               subtitle: Text(
-                "Default",
+                Strings.defaultName,
                 style: TextStyle(color: Colors.grey, fontSize: 10),
               ),
             ),

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/colors.dart';
+import 'package:whatsapp_design/src/core/constants/images.dart';
+import 'package:whatsapp_design/src/core/constants/strings.dart';
 
 class PaymentHistory extends StatelessWidget {
   const PaymentHistory({super.key});
@@ -11,7 +14,8 @@ class PaymentHistory extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("    History",
+            Text(
+              Strings.history,
               style: TextStyle(
                 color: Color(0xff075E54),
                 fontSize: 15,
@@ -20,23 +24,22 @@ class PaymentHistory extends StatelessWidget {
             ListTile(
               leading: CircleAvatar(
                 radius: 50,
-                backgroundImage: NetworkImage(
-                    "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+                backgroundImage: NetworkImage(Images.bankDP),
               ),
               title: Text(
-                "Indrajith",
+                Strings.senderName,
                 style: TextStyle(color: Colors.black),
               ),
               subtitle: Text(
-                "Sent to you",
+                Strings.historySubTitle,
                 style: TextStyle(color: Colors.grey, fontSize: 10),
               ),
               trailing: Column(
                 children: [
-                  Text('''+100'''),
+                  Text(Strings.money),
                   Text(
-                    '''Completed''',
-                    style: TextStyle(color: Color(0xff075E54)),
+                    Strings.completed,
+                    style: TextStyle(color: wpgreenAccent),
                   ),
                 ],
               ),
