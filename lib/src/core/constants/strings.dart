@@ -4,8 +4,7 @@ class Strings{
   static const chat2Title = "Anlin";
   static const chat1SubTitle = "Hello there";
   static const chat2SubTitle = "Hi there";
-  static const chat1DP = "https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture-768x768.jpg";
-  static const chat2DP = "https://www.epicscotland.com/wp-content/uploads/2018/01/Business-Headshot_002.jpg";
+
 
   static const statusLabel = "My Status";
   static const statusUpdateLabel = "Recent updates";
@@ -21,6 +20,9 @@ class Strings{
   static const callType2 = "incoming missed call";
   static const callType3 = "incoming picked up";
   static const callType4 = "outgoing picked up";
+
+  static const videoCallImagePath = "assets/images/video_call2.png";
+  static const greenCallImagePath = 'assets/images/green_call.png';
 
   static const callLinkLabel = "Create call link";
   static const callLinkSubTitle = "Share a link for your WhatsApp call";

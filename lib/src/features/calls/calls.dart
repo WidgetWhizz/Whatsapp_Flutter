@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/images.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/core/helper/callType-helper.dart';
 import 'package:whatsapp_design/src/core/helper/titleColor-helper.dart';
@@ -49,37 +50,37 @@ class Calls extends StatelessWidget {
           callerName: Strings.caller1,
           titleColor: TitleColorHelper.getTitleColor(calltype[0]),
           callTypeImage: CallTypeHelper.callType(calltype[0]),
-          userImage: Strings.chat2DP,
+          userImage: Images.chat2DP,
           dateTime: DateTime(2023, 9, 12, 10, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[0]),
-          imagePath: 'assets/images/video_call2.png',
+          imagePath: Strings.videoCallImagePath,
         ),
         CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage: Strings.chat1DP,
+          userImage: Images.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
-          imagePath: 'assets/images/green_call.png',
+          imagePath: Strings.greenCallImagePath,
         ),
         CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage: Strings.chat1DP,
+          userImage: Images.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
-          imagePath: 'assets/images/green_call.png',
+          imagePath: Strings.greenCallImagePath,
         ),
         CallListItem(
           callerName: Strings.caller2,
           titleColor: TitleColorHelper.getTitleColor(calltype[2]),
           callTypeImage: CallTypeHelper.callType(calltype[2]),
-          userImage:Strings.chat1DP,
+          userImage:Images.chat1DP,
           dateTime: DateTime(2023, 9, 12, 5, 10),
           imageColor: TitleColorHelper.getTitleColor(calltype[2]),
-          imagePath: 'assets/images/green_call.png',
+          imagePath: Strings.greenCallImagePath,
         ),
       ],
     );

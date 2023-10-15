@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/core/constants/images.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
 import 'package:whatsapp_design/src/core/helper/datetime-helper.dart';
 import 'package:whatsapp_design/src/features/status/status_list_item.dart';
@@ -15,7 +16,7 @@ class Status extends StatelessWidget {
         ),
         ListTile(
           leading: CircleAvatar(
-              backgroundImage: NetworkImage(Strings.chat1DP),
+              backgroundImage: NetworkImage(Images.chat1DP),
               radius: 40,
               child: Stack(children: [
                 Align(
@@ -30,7 +31,7 @@ class Status extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold)),
           subtitle: Text(DateTimeHelper.getFormattedDate(DateTime.now())),
           trailing: Image.asset(
-            'assets/images/3dots_icon.jpg',
+            Images.threeDotsImagePath,
             width: 30,
             height: 20,
             color: Colors.green,
@@ -49,11 +50,11 @@ class Status extends StatelessWidget {
         StatusListItem(
             contactName: Strings.updateStatus1Name,
             dateTime: DateTime.now(),
-            imagePath: 'manhattan_bridge.jpg'),
+            imagePath: Images.manhattanBridgeImagePath),
         StatusListItem(
             contactName: Strings.updateStatus2Name,
             dateTime: DateTime(2023, 9, 17, 11, 26),
-            imagePath: 'gate_way_of_india.jpg'),
+            imagePath: Images.gatewayOfIndiaImagePath),
         SizedBox(
           height: 15,
         ),
@@ -65,11 +66,11 @@ class Status extends StatelessWidget {
         StatusListItem(
             contactName: Strings.oldStatus1Name,
             dateTime: DateTime.now(),
-            imagePath: 'manhattan_bridge.jpg'),
+            imagePath: Images.manhattanBridgeImagePath),
         StatusListItem(
             contactName: Strings.oldStatus2Name,
             dateTime: DateTime(2023, 9, 17, 11, 26),
-            imagePath: 'gate_way_of_india.jpg'),
+            imagePath:  Images.gatewayOfIndiaImagePath),
       ],
     );
   }
