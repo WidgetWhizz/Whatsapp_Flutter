@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/helper/datetime-helper.dart';
-import 'package:whatsapp_design/src/core/theme/text_theme.dart';
 
-class CallList extends StatelessWidget {
+
+class CallListItem extends StatelessWidget {
   final String callerName, userImage, callTypeImage;
   final int imageColor;
   final int titleColor;
   final DateTime dateTime;
   final String imagePath;
 
-  const CallList({
+  const CallListItem({
         super.key,
         required this.callerName,
         required this.userImage,
         required this.dateTime,
         required this.callTypeImage,
         required this.imageColor,
-        required this.titleColor,
-        required this.imagePath
+        required this.imagePath,
+        required this.titleColor
+
       });
 
   @override
