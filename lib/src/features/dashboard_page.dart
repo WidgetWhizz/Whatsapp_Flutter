@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_design/src/core/constants/colors.dart';
 import 'package:whatsapp_design/src/core/constants/option_menu_enum.dart';
 import 'package:whatsapp_design/src/core/constants/strings.dart';
-import 'package:whatsapp_design/src/features/calls/Calls.dart';
-import 'package:whatsapp_design/src/features/chats/Chats.dart';
-import 'package:whatsapp_design/src/features/Community.dart';
-import 'package:whatsapp_design/src/features/status/Status.dart';
+import 'package:whatsapp_design/src/features/calls/calls.dart';
+import 'package:whatsapp_design/src/features/chats/chats.dart';
+import 'package:whatsapp_design/src/features/community.dart';
+import 'package:whatsapp_design/src/features/status/status.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
