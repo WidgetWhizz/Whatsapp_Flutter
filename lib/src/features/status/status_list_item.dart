@@ -16,18 +16,7 @@ class StatusListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      // leading: Container(
-      //   padding: EdgeInsets.all(3.0),
-      //   decoration: BoxDecoration(
-      //     //image: DecorationImage(image: NetworkImage(imagePath)),
-      //     shape: BoxShape.circle,
-      //     color: Colors.green
-      //   ),
-      //   child: CircleAvatar(
-      //     radius: 40,
-      //     foregroundImage: AssetImage(imagePath),
-      //   ),
-      // ),
+
       leading: CircleAvatar(
         radius: 40,
         backgroundColor: Colors.green,
