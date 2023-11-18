@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/features/account/account_page.dart';
+import 'package:whatsapp_design/src/features/help/help_page.dart';
 
 import 'package:whatsapp_design/src/features/privacy/privacy_page.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
@@ -32,6 +34,7 @@ class _SettingPageState extends State<SettingPage> {
               title: "Account",
               subtitle: "Security notifications,change number",
               onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AccountPage()));
                 }, leading: Icons.key,),
           SettingOption(
               title: "Privacy",
@@ -69,7 +72,10 @@ class _SettingPageState extends State<SettingPage> {
           SettingOption(
               title: "Help",
               subtitle: "Help centre, contact us, privacy policy",
-              onTap: (){},
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) =>  HelpPage()));
+              },
               leading: Icons.arrow_circle_down),
           SettingOption(
               title: "Invite a friend",

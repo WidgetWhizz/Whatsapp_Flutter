@@ -1,3 +1,4 @@
+
 class Strings{
   static const PrivacyTitle = "Privacy";
   static const Privacy2 = "Who can see my personal info";
@@ -22,4 +23,25 @@ class Strings{
   static const Privacy21 = "7";
   static const Privacy22 = "Fingerprint lock";
   static const Privacy23 = "Disabled";
+  static const communityName1 = "New community";
+  static const communityName2 = "Announcements";
+  static const communityName3 = "View all";
+  static const communityName4 = "Cusat Update";
+  static const communityName5 = "Announcements";
+  static const communityName6 = "Devtown Backend Development";
+  static const communitylastMessage1 = "~khushi:The class has already started";
+  static const communitylastMessage2 = "Cochin University";
+  static const help1 = "Help";
+  static const help2 = "Help Center";
+  static const help3 = "Contact us";
+  static const help4 = "Questions?Need help?";
+  static const help5 = "Terms and Privacy Policy";
+  static const help6 = "App info";
+  static const account1 = "Security notification";
+  static const account2 = "Two-step verification";
+  static const account3 = "Change number";
+  static const account4 = "Request account info";
+  static const account5 = "Add account";
+  static const account6 = "Delete account";
+
 }
