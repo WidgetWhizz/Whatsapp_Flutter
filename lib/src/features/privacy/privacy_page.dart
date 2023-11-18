@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp_design/src/core/constants/Strings.dart';
 
 class WhatsAppPrivacyPage extends StatefulWidget {
   @override
@@ -12,7 +11,7 @@ class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title: Text(Strings.PrivacyTitle),
+        title: Text('WhatsApp Privacy'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -21,68 +20,76 @@ class _WhatsAppPrivacyPageState extends State<WhatsAppPrivacyPage> {
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                Strings.Privacy2,
+                'Who can see my personal info',
                 style: TextStyle(
-                  fontSize: 12.0,
-
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
             ListTile(
-              title: Text(Strings.Privacy3),
-              subtitle: Text(Strings.Privacy4),
-
-              ),
-
-            ListTile(
-              title: Text(Strings.Privacy5),
-              subtitle: Text(Strings.Privacy6),
-
-            ),
-            ListTile(
-              title: Text(Strings.Privacy7),
-              subtitle: Text(Strings.Privacy8),
-
-            ),
-            ListTile(
-              title: Text(Strings.Privacy9),
-              subtitle: Text(Strings.Privacy10),
-
-            ),
-            ListTile(
-              title: Text(Strings.Privacy11),
-              subtitle: Text(Strings.Privacy12),
+              title: Text('Profile photo'),
+              subtitle: Text('My contacts'),
               trailing: Switch(
                 value: true,
                 onChanged: (value) {},
               ),
             ),
             ListTile(
-              title: Text(Strings.Privacy13),
-              subtitle: Text(Strings.Privacy14),
-
+              title: Text('Last seen and online'),
+              subtitle: Text('Nobody'),
+              trailing: Switch(
+                value: false,
+                onChanged: (value) {},
+              ),
             ),
             ListTile(
-              title: Text(Strings.Privacy15),
+              title: Text('About'),
+              subtitle: Text('329 contacts excluded'),
+              trailing: Switch(
+                value: true,
+                onChanged: (value) {},
+              ),
+            ),
+            ListTile(
+              title: Text('Status'),
+              subtitle: Text('261 contacts selected'),
+              trailing: Switch(
+                value: true,
+                onChanged: (value) {},
+              ),
+            ),
+            ListTile(
+              title: Text('Read receipts'),
+              subtitle: Text('If turned off, you won\'t send or receive Read receipts. Read receipts are always sent for group chats.'),
+              trailing: Switch(
+                value: true,
+                onChanged: (value) {},
+              ),
+            ),
+            ListTile(
+              title: Text('Disappearing messages'),
+              subtitle: Text('Default message timer'),
+              trailing: Switch(
+                value: false,
+                onChanged: (value) {},
+              ),
+            ),
+            ListTile(
+              title: Text('Start new chats with disappearing messages set to your timer'),
               subtitle: null,
-
+              trailing: Checkbox(
+                value: false,
+                onChanged: (value) {},
+              ),
             ),
             ListTile(
-              title: Text(Strings.Privacy16),
-              subtitle: Text(Strings.Privacy17),
-
-            ),
-            ListTile(
-              title: Text(Strings.Privacy18),
-              subtitle: Text(Strings.Privacy19),
-            ),
-            ListTile(
-              title: Text(Strings.Privacy20),
-              subtitle: Text(Strings.Privacy21),
-            ),
-            ListTile(
-              title: Text(Strings.Privacy22),
-              subtitle: Text(Strings.Privacy23),
+              title: Text('Groups'),
+              subtitle: Text('My contacts'),
+              trailing: Switch(
+                value: true,
+                onChanged: (value) {},
+              ),
             ),
           ],
         ),
