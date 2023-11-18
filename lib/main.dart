@@ -1,7 +1,11 @@
-import 'dart:collection';
+
 
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
+import 'package:whatsapp_design/src/colors.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
+import 'package:whatsapp_design/src/features/notifications/notifications_page.dart';
+import 'package:whatsapp_design/src/strings.dart';
 
 void main() {
   runApp(const WhatsApp());
@@ -14,9 +18,11 @@ class WhatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Map<int, Color> swatch = new Map();
-
-    return MaterialApp(
-      title: 'Whatsapp',
+    return
+    Sizer(
+      builder: (context, orientation, deviceType) {
+        return MaterialApp(
+          title: Strings.whatsapp,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -27,10 +33,15 @@ class WhatsApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.green
+        primarySwatch: wpgreen,
       ),
-      home: DashboardPage(),
+      home:const DashboardPage(),
+      
       debugShowCheckedModeBanner: false,
-    );
+        );
+      }
+ );
+
+   
   }
 }

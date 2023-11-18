@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/colors.dart';
+import 'package:whatsapp_design/src/features/notifications/notifications_page.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
 import 'package:whatsapp_design/src/strings.dart';
@@ -16,7 +18,7 @@ class _SettingPageState extends State<SettingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:  Text(Strings.settings,textAlign: TextAlign.left,style: TextStyle(color: Colors.white),),automaticallyImplyLeading: true,
-      backgroundColor: const Color(0xff075e54),),
+      backgroundColor: wpgreen),
       
       body: ListView(
         children: [
@@ -52,7 +54,9 @@ class _SettingPageState extends State<SettingPage> {
           SettingOption(
               title: Strings.notifications,
               subtitle: Strings.messageGroupCall,
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const NotificationPage()));
+              },
               leading: Icons.notifications),
           SettingOption(
               title: Strings.storageAndData,
