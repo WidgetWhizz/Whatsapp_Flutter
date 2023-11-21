@@ -42,7 +42,7 @@ class _ChatSettingPageState extends State<ChatSettingPage> {
               style: AppTextStyles.subheaderStyle,
             ),
             SizedBox(
-              height: 4.h,
+              height: 3.h,
             ),
             ChatListItem(
                 title: Strings.theme,
@@ -55,7 +55,7 @@ class _ChatSettingPageState extends State<ChatSettingPage> {
             ChatListItem(
                 title: Strings.wallpaper, leading: Icons.image, onTap: () {}),
             const Divider(),
-            const Text(Strings.chatSettings),
+            Text(Strings.chatSettings, style: AppTextStyles.subheaderStyle),
             ChatListToggle(
                 title: Strings.enterisSend,
                 subtitle: Strings.enterKey,
@@ -64,11 +64,13 @@ class _ChatSettingPageState extends State<ChatSettingPage> {
                 onTap: () {}),
             ChatListToggle(
                 title: Strings.mediaVisiblity,
+                subtitle: Strings.downloadedMedia,
                 value: mediaVisibility,
                 onChanged: (value) => setState(() => mediaVisibility = value),
                 onTap: () {}),
             ChatListToggle(
                 title: Strings.instantVideo,
+                subtitle: Strings.tap,
                 value: instantVideo,
                 onChanged: (value) => setState(() => instantVideo = value),
                 onTap: () {}),

@@ -13,7 +13,7 @@ class ChatListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: Icon(leading,color: AppColors.greyColor,),
-      title: Text(title),
+      title: Text(title, style: AppTextStyles.titleTextStyles,),
       subtitle: subtitle != null ? Text(subtitle!,style: AppTextStyles.bodyTextStyle,) : null,
       onTap: onTap,
     );

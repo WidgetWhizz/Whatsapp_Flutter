@@ -20,7 +20,7 @@ class ChatListToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(left:4.w),
+      padding:  EdgeInsets.only(left:6.w),
       child: ListTile(
         title: Text(title,style: AppTextStyles.titleTextStyles,),
         subtitle: subtitle != null ? Text(subtitle!,style: AppTextStyles.bodyTextStyle,) : null,

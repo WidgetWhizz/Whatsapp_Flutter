@@ -20,7 +20,7 @@ class AppTextStyles {
   );
 
   static  TextStyle bodyTextStyle = TextStyle(
-    fontSize: 3.sp,
+    fontSize: 6.sp,
     color: AppColors.greyColor,
   );
 
@@ -29,7 +29,7 @@ class AppTextStyles {
     color: Colors.black,
   );
   static  TextStyle titleTextStyles = TextStyle(
-    fontSize: 4.sp,
-    color: Colors.grey,
+    fontSize: 7.sp,
+    color: Colors.black,
   );
   }
