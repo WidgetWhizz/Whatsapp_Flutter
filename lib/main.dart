@@ -1,6 +1,6 @@
 import 'dart:collection';
-
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:whatsapp_design/src/features/dashboard_page.dart';
 
 void main() {
@@ -13,8 +13,9 @@ class WhatsApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Map<int, Color> swatch = new Map();
-
+    //Map<int, Color> swatch = new Map()
+    return Sizer(
+      builder: (context, orientation, deviceType) {
     return MaterialApp(
       title: 'Whatsapp',
       theme: ThemeData(
@@ -32,5 +33,6 @@ class WhatsApp extends StatelessWidget {
       home: DashboardPage(),
       debugShowCheckedModeBanner: false,
     );
+    });
   }
 }

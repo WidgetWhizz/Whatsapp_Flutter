@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_design/src/features/chat_settings/chat_setting_page.dart';
 import 'package:whatsapp_design/src/features/settings/profile_option.dart';
 import 'package:whatsapp_design/src/features/settings/setting_option.dart';
-import 'package:whatsapp_design/src/strings.dart';
+
+import '../../strings.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({super.key});
@@ -47,12 +49,15 @@ class _SettingPageState extends State<SettingPage> {
           SettingOption(
               title: Strings.chats,
               subtitle: Strings.themeAndWallpaper,
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChatSettingPage()));
+              },
               leading: Icons.chat),
           SettingOption(
               title: Strings.notifications,
               subtitle: Strings.messageGroupCall,
-              onTap: (){},
+              onTap: (){
+              },
               leading: Icons.notifications),
           SettingOption(
               title: Strings.storageAndData,
